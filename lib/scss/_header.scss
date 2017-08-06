@@ -1,0 +1,45 @@
+.Header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient(45deg, rgba(orange, .5),rgba(red, .9));
+	position: fixed;
+	width: 100%;
+	height: 70px;
+
+	&-logo {
+		width: 40px;
+	    margin: 0 auto;
+	    padding: 10px;
+	    img {
+	        width: 100%;
+	    }
+		@media screen and (min-width: 768px){
+			margin: 0;
+		}
+    }
+
+	&-nav {
+		width: 80%;
+		@media screen and (min-width: 768px){
+			width: 40%;
+		}
+	}
+
+	&-list {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		&Item {
+			border-bottom: 1px solid white;
+		}
+
+		&Item a{
+			color: white;
+			display: block;
+			padding: .5em;
+			font-size: 14px;
+		}
+	}
+}
