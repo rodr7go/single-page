@@ -17,7 +17,7 @@
         margin: 0; } }
   .Header-nav {
     width: 80%; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
       .Header-nav {
         width: 40%; } }
   .Header-list {
