@@ -1,0 +1,36 @@
+.First-section {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:{
+		image: url("/img/first-section-img.jpg");
+		size: cover;
+		position: 50% 50%;
+	}
+	box-shadow: 1000px 1000px rgba(#212121, .6) inset;
+
+	.wrapper {
+		max-width: 80%;
+	}
+	&Paragraph {
+		font-size: 32px;
+		color: rgba(white, 1);
+		padding-bottom: 15px;
+	}
+	&Link {
+		color: white;
+		padding: 1.5em;
+		border: 2px solid white;
+		transition: all .3s;
+		&::after {
+			content: '=>';
+			margin-left: 5px;
+			font-size: 20px;
+		}
+		&:hover {
+			color: orange;
+			border: 2px solid orange;
+		}
+	}
+}

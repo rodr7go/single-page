@@ -5,7 +5,8 @@
   background: linear-gradient(45deg, rgba(255, 165, 0, 0.5), rgba(255, 0, 0, 0.9));
   position: fixed;
   width: 100%;
-  height: 70px; }
+  height: 70px;
+  top: 0; }
   .Header-logo {
     width: 40px;
     margin: 0 auto;
@@ -32,8 +33,35 @@
       padding: .5em;
       font-size: 14px; }
 
+.First-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/first-section-img.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  box-shadow: 1000px 1000px rgba(33, 33, 33, 0.6) inset; }
+  .First-section .wrapper {
+    max-width: 80%; }
+  .First-sectionParagraph {
+    font-size: 32px;
+    color: white;
+    padding-bottom: 15px; }
+  .First-sectionLink {
+    color: white;
+    padding: 1.5em;
+    border: 2px solid white;
+    transition: all .3s; }
+    .First-sectionLink::after {
+      content: '=>';
+      margin-left: 5px;
+      font-size: 20px; }
+    .First-sectionLink:hover {
+      color: orange;
+      border: 2px solid orange; }
+
 body {
-  color: red;
   font-family: sans-serif; }
 
 ul {
