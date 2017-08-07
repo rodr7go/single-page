@@ -1,4 +1,6 @@
 @import "variables";
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+@import "helpers";
 @import "header";
 @import "index";
 
@@ -13,4 +15,5 @@ ul {
 }
 a {
 	text-decoration: none;
+	outline: none;
 }

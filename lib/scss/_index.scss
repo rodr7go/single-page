@@ -1,12 +1,10 @@
 .First-section {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	height: 110vh;
 	background:{
 		image: url("/img/first-section-img.jpg");
 		size: cover;
 		position: 50% 50%;
+		attachment: fixed;
 	}
 	box-shadow: 1000px 1000px rgba(#212121, .6) inset;
 
@@ -15,22 +13,32 @@
 	}
 	&Paragraph {
 		font-size: 32px;
-		color: rgba(white, 1);
+		color: $color-white;
 		padding-bottom: 15px;
 	}
 	&Link {
-		color: white;
+		color: $color-white;
 		padding: 1.5em;
-		border: 2px solid white;
+		border: 2px solid $color-white;
 		transition: all .3s;
-		&::after {
-			content: '=>';
+		i {
 			margin-left: 5px;
 			font-size: 20px;
 		}
 		&:hover {
-			color: orange;
-			border: 2px solid orange;
+			color: $color-orange;
+			border: 2px solid $color-orange;
+		}
+	}
+}
+
+.Video-section {
+	height: 30vh;
+	&Link {
+		font-size: 26px;
+		color: $color-orange;
+		i {
+			margin-left: 10px;
 		}
 	}
 }
