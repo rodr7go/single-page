@@ -1,12 +1,23 @@
 extends layout/layout
 
 block Main
-    section.First-section.content-center
+    section.First-section.content-center.main-box-shadow
         .wrapper
             p.First-sectionParagraph Una plantilla exclusiva y Premium HTML5 y CSS3 creada exclusivamente para Controlmas.
             a.First-sectionLink(href='#') Boton que hace algo
                 i.fa.fa-arrow-down
 
-    section.Video-section.content-center
-        a(href='#' class='js-modal-btn Video-sectionLink' data-video-id='QQr-oIhnQDc')#Video-sectionBtn Ver video
+    section.Second-section.content-center
+        a(href='#' class='js-modal-btn Second-sectionLink' data-video-id='QQr-oIhnQDc')#Video-sectionBtn Ver video
             i.fa.fa-play-circle
+
+    section.Third-section.content-center.main-box-shadow
+        i.fa.fa-html5
+
+    section.Fourth-section.content-center
+        .wrapper
+            article
+                h3.Fourth-sectionTitle Este es el titulo del articulo
+                p.Fourth-sectionParagraph Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                a(href='#' class='Fourth-sectionLink') Este es el texto del enlace
+                    i.fa.fa-long-arrow-right

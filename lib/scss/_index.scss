@@ -6,21 +6,20 @@
 		position: 50% 50%;
 		attachment: fixed;
 	}
-	box-shadow: 1000px 1000px rgba(#212121, .6) inset;
-
-	.wrapper {
-		max-width: 80%;
-	}
 	&Paragraph {
 		font-size: 32px;
 		color: $color-white;
 		padding-bottom: 15px;
+		animation: fadein 1s linear;
+		position: relative;
 	}
 	&Link {
 		color: $color-white;
 		padding: 1.5em;
 		border: 2px solid $color-white;
 		transition: all .3s;
+		animation: fadelink 1s linear;
+		position: relative;
 		i {
 			margin-left: 5px;
 			font-size: 20px;
@@ -32,13 +31,75 @@
 	}
 }
 
-.Video-section {
-	height: 30vh;
+.Second-section {
+	height: 35vh;
 	&Link {
 		font-size: 26px;
 		color: $color-orange;
 		i {
 			margin-left: 10px;
 		}
+	}
+}
+
+.Third-section {
+	height: 70vh;
+	background: {
+		image: url("/img/office.jpg");
+		size: cover;
+	}
+	i {
+		color: $color-orange;
+		font-size: 7em;
+	}
+}
+
+.Fourth-section {
+	height: 70vh;
+	background-color: $color-secondary-orange;
+	color: $color-white;
+	&Title {
+		font-weight: lighter;
+		font-size: 22px;
+	}
+	&Paragraph {
+		font-size: 14px;
+	}
+	&Link {
+		color: #E9D460;
+	}
+	i {
+		margin-left: 10px;
+	}
+}
+
+.Third-section, .Fourth-section{
+	@media screen and (min-width: 768px) {
+		width: 50%;
+		display: inline-flex;
+		vertical-align: bottom;
+	}
+}
+
+
+@keyframes fadein {
+	from{
+		opacity: 0;
+		top: -30px;
+	}
+	to {
+		opacity: 1;
+		top: 0;
+	}
+}
+
+@keyframes fadelink {
+	from {
+		opacity: 0;
+		bottom: -30px;
+	}
+	to {
+		opacity: 1;
+		bottom: 0;
 	}
 }

@@ -2333,6 +2333,12 @@
   justify-content: center;
   align-items: center; }
 
+.main-box-shadow {
+  box-shadow: 1000px 1000px rgba(33, 33, 33, 0.6) inset; }
+
+.wrapper {
+  max-width: 80%; }
+
 .Header {
   display: flex;
   justify-content: space-between;
@@ -2373,19 +2379,20 @@
   background-image: url("/img/first-section-img.jpg");
   background-size: cover;
   background-position: 50% 50%;
-  background-attachment: fixed;
-  box-shadow: 1000px 1000px rgba(33, 33, 33, 0.6) inset; }
-  .First-section .wrapper {
-    max-width: 80%; }
+  background-attachment: fixed; }
   .First-sectionParagraph {
     font-size: 32px;
     color: white;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    animation: fadein 1s linear;
+    position: relative; }
   .First-sectionLink {
     color: white;
     padding: 1.5em;
     border: 2px solid white;
-    transition: all .3s; }
+    transition: all .3s;
+    animation: fadelink 1s linear;
+    position: relative; }
     .First-sectionLink i {
       margin-left: 5px;
       font-size: 20px; }
@@ -2393,13 +2400,57 @@
       color: orange;
       border: 2px solid orange; }
 
-.Video-section {
-  height: 30vh; }
-  .Video-sectionLink {
+.Second-section {
+  height: 35vh; }
+  .Second-sectionLink {
     font-size: 26px;
     color: orange; }
-    .Video-sectionLink i {
+    .Second-sectionLink i {
       margin-left: 10px; }
+
+.Third-section {
+  height: 70vh;
+  background-image: url("/img/office.jpg");
+  background-size: cover; }
+  .Third-section i {
+    color: orange;
+    font-size: 7em; }
+
+.Fourth-section {
+  height: 70vh;
+  background-color: #F27935;
+  color: white; }
+  .Fourth-sectionTitle {
+    font-weight: lighter;
+    font-size: 22px; }
+  .Fourth-sectionParagraph {
+    font-size: 14px; }
+  .Fourth-sectionLink {
+    color: #E9D460; }
+  .Fourth-section i {
+    margin-left: 10px; }
+
+@media screen and (min-width: 768px) {
+  .Third-section, .Fourth-section {
+    width: 50%;
+    display: inline-flex;
+    vertical-align: bottom; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    top: -30px; }
+  to {
+    opacity: 1;
+    top: 0; } }
+
+@keyframes fadelink {
+  from {
+    opacity: 0;
+    bottom: -30px; }
+  to {
+    opacity: 1;
+    bottom: 0; } }
 
 body {
   font-family: sans-serif; }
