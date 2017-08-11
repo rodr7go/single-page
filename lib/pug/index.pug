@@ -16,8 +16,25 @@ block Main
 
     section.Fourth-section.content-center
         .wrapper
-            article
-                h3.Fourth-sectionTitle Este es el titulo del articulo
+            article.Fourth-sectionArticles.first-article
+                h3.Fourth-sectionTitle Este es el titulo del articulo FIRST
                 p.Fourth-sectionParagraph Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 a(href='#' class='Fourth-sectionLink') Este es el texto del enlace
                     i.fa.fa-long-arrow-right
+            article.Fourth-sectionArticles.second-article
+                h3.Fourth-sectionTitle Este es el titulo del articulo SECOND
+                p.Fourth-sectionParagraph Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                a(href='#' class='Fourth-sectionLink') Este es el texto del enlace
+                    i.fa.fa-long-arrow-right
+
+            article.Fourth-sectionArticles.third-article
+                h3.Fourth-sectionTitle Este es el titulo del articulo THIRD
+                p.Fourth-sectionParagraph Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                a(href='#' class='Fourth-sectionLink') Este es el texto del enlace
+                    i.fa.fa-long-arrow-right
+
+            .Fourth-sectionArticlesLinks
+                ul
+                    li: a(href='#' class='article-link first active')
+                    li: a(href='#' class='article-link second')
+                    li: a(href='#' class='article-link third')

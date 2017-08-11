@@ -71,6 +71,31 @@
 	i {
 		margin-left: 10px;
 	}
+	&Articles.second-article,
+	&Articles.third-article{
+		display: none;
+	}
+
+	&ArticlesLinks {
+		margin-top: 15px;
+		li {
+			display: inline-block;
+			a {
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				border: 3px solid white;
+				border-radius: 50%;
+				margin-right: 10px;
+			}
+		}
+		.active {
+			background-color: white;
+		}
+		.inactive {
+			background-color: red;
+		}
+	}
 }
 
 .Third-section, .Fourth-section{

@@ -2430,6 +2430,23 @@
     color: #E9D460; }
   .Fourth-section i {
     margin-left: 10px; }
+  .Fourth-sectionArticles.second-article, .Fourth-sectionArticles.third-article {
+    display: none; }
+  .Fourth-sectionArticlesLinks {
+    margin-top: 15px; }
+    .Fourth-sectionArticlesLinks li {
+      display: inline-block; }
+      .Fourth-sectionArticlesLinks li a {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 3px solid white;
+        border-radius: 50%;
+        margin-right: 10px; }
+    .Fourth-sectionArticlesLinks .active {
+      background-color: white; }
+    .Fourth-sectionArticlesLinks .inactive {
+      background-color: red; }
 
 @media screen and (min-width: 768px) {
   .Third-section, .Fourth-section {
