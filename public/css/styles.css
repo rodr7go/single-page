@@ -2407,7 +2407,9 @@
     font-size: 26px;
     color: orange; }
     .Second-sectionLink i {
-      margin-left: 10px; }
+      margin-left: 10px;
+      font-size: 50px;
+      vertical-align: middle; }
 
 .Third-section {
   height: 70vh;
@@ -2448,6 +2450,55 @@
     .Fourth-sectionArticlesLinks .inactive {
       background-color: red; }
 
+.Fifth-section {
+  padding: 8em 0; }
+  .Fifth-section .wrapper {
+    margin: 0 auto; }
+  .Fifth-sectionArticle {
+    margin-bottom: 3em; }
+    @media screen and (min-width: 1024px) {
+      .Fifth-sectionArticle {
+        width: 33.3333333333333333333333333333333333333%;
+        display: inline-block;
+        margin-bottom: 0; } }
+  .Fifth-section .feature-icon {
+    border: 2px solid orange;
+    color: orange;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+    line-height: 80px;
+    vertical-align: top;
+    margin-right: 15px; }
+  .Fifth-section .feature-content {
+    width: 70%;
+    display: inline-block; }
+    .Fifth-section .feature-contentTitle {
+      color: #333333;
+      font-weight: lighter;
+      font-size: 18px; }
+    .Fifth-section .feature-contentParagraph {
+      color: #f2cb87;
+      line-height: 25px;
+      font-size: 14px; }
+    .Fifth-section .feature-contentLink {
+      color: #323a45;
+      font-size: 14px;
+      transition: all .3s linear; }
+      .Fifth-section .feature-contentLink i {
+        margin-left: 10px; }
+      .Fifth-section .feature-contentLink:hover {
+        color: orange; }
+    @media screen and (min-width: 768px) {
+      .Fifth-section .feature-content {
+        width: 80%; } }
+    @media screen and (min-width: 1024px) {
+      .Fifth-section .feature-content {
+        width: 60%; } }
+
 @media screen and (min-width: 768px) {
   .Third-section, .Fourth-section {
     width: 50%;
@@ -2472,6 +2523,10 @@
 
 body {
   font-family: sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
 
 ul {
   list-style: none;
