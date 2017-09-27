@@ -67,3 +67,12 @@ block Main
                     p.feature-contentParagraph Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     a(href='#' class='feature-contentLink') READ MORE
                         i.fa.fa-chevron-circle-right
+
+    section.Sixth-section#screenShots
+        .gallery
+            - var path = "/img/screenshots/"
+            - var images = [{"name": ['1.jpg']}, {'name': '2.jpg'}]
+            each image in images
+                a(href="#")
+                    figure.gallery-item
+                        img(src=path + image.name)

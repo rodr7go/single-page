@@ -31,7 +31,7 @@ gulp.task('browserify', function () {
 gulp.task('pug', function() {
     return gulp.src('lib/pug/*.pug')
         .pipe(pug())
-        .pipe(gulp.dest('./public'))
+        .pipe(gulp.dest('./public'));
 
     setTimeout(function () {
         del(['./public/layout.html']);
